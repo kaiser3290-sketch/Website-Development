@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning in CSS</title>
+        <style>
+            body{
+                height: 2000px;
+            }
+            .box5{
+                position: sticky;
+                top: 0;
+                background-color: beige;
+            }
+            .box1{
+                background-color: aqua;
+                height: 250px;
+                width: 250px;
+                position: static;
+                left: 100px;
+            }
+            .box2{
+                background-color: rgb(4, 0, 255);
+                height: 250px;
+                width: 250px;
+                position: fixed;
+                left: 100px;
+
+            }
+            .box3{
+                background-color: rgb(255, 0, 0);
+                height: 250px;
+                width: 250px;
+                position: relative;
+                left: 100px;
+                opacity: 0.2;
+            }
+            .box4{
+                background-color: rgb(255, 187, 0);
+                height: 250px;
+                width: 250px;
+                position: absolute;
+                left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box5">i am sticky positioning iam a combination offixed an relative</div>
+        <div class="box1">Static positioning means you cannot move it using top, bottom, left and right</div>
+        <div class="box2">Fixed positioning means you can move it using top, bottom, left and right it stay fixed on the screen when you scroll</div>
+        <div class="box3">Relative positioning means it shift from where it was normally</div>
+        <div class="box4">Absolute positioning means it shift relative nearest position parent</div>
+    </body>
+</html>
