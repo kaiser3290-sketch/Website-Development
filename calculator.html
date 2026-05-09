@@ -6,6 +6,8 @@
 <body>
 <h1 id="ans"></h1>
 <button onclick="addition (22222,1);">Ans</button>
+<h2 id="aans"></h2>
+<button onclick="multiplication (22222,1);">Ans</button>
 <script>
     //creatin a function
     function addition(n1,n2){
@@ -13,8 +15,12 @@
         ans=n1+n2;
         document.getElementById("ans").innerHTML=n1+" + " +n2+" = " +ans;
     }
+    function multiplication(n1, n2) {
+            var aans;
+            aans = n1 * n2;
+            document.getElementById("aans").innerHTML = n1 + " x " + n2 +" = " + aans;
+        }
     //calling a function
-    
 </script>
 </body>
 </html>
