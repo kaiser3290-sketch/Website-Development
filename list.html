@@ -2,13 +2,28 @@
 <html>
     <head>
         <title>learning about list</title>
+        <style>
+            li>ol{
+                color: pink;
+            }
+            h1+p{
+                color: green;
+            }
+            li:nth-child(2){
+                background-color: pink;
+            }
+        </style>
     </head>
     <body>
         <h1>Ordered list</h1>
         <ol>
-            <li>apple</li>
-            <li>banana</li>
-            <li>orange</li>
+            <li>fruits
+                <ol>
+                            <li>apple</li>
+                            <li>banana</li>
+                            <li>orange</li>
+                </ol>
+            </li>
         </ol>
         <h1>unordered list</h1>
         <ul>
@@ -16,5 +31,9 @@
             <li>mango</li>
             <li>litchi</li>
         </ul>
+        <h1>i am h1</h1>
+        <p>i am para</p>
+        <p>iam  para2</p>
+        <h1>i am h1**</h1>
     </body>
 </html>
