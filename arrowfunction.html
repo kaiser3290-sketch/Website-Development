@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="addoutput"></h1>
+        <h1 id="suboutput"></h1>
+        <script>
+            //function
+            function add(n1,n2){
+                return n1+n2;
+            }
+            document.getElementById("addoutput").innerHTML=add(8,4);
+            //arrow function
+            var sub=(n1,n2)=>n2-n1;
+            document.getElementById("suboutput").innerHTML=sub(5,3);
+
+            try{
+                addalert("hellohi");
+            }
+            catch(e){
+                document.getElementById("suboutput").innerHTML=e.message
+            }
+        </script>
+    </body>
+</html>

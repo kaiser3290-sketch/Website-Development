@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class addmission{
+                //consturcotor is a special method tha will calledautomatticly when you create object
+                constructor(name){
+                   //this is a keywordthat will refer to object it belongs to
+                   this.stdname=name;
+                }
+                //Method
+                submitform(name){
+                    document.write("form subbmited for "+this.stdname);
+                    document.write("<br>")
+                }
+                cancelform(){
+                    document.write("form cancelled for"+ this.stdname);
+                } 
+                static info(){
+                    document.write("addmission form will be closing on 25th may");
+                }
+            }
+            //object
+            student1=new addmission("himansh");
+            student1.submitform("Himansh");
+            student2=new addmission("aaryav");
+                        //calling a method
+            student2.submitform("Aaryav");   
+            student2.cancelform();                                                
+            //calling a static method
+            addmission.info();
+        </script>
+    </body>
+</html>

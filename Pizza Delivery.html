@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My Delivery Tracker</h1>
+        <button onclick="order_place()">Place Order</button>
+        <h1 id="order_place_output"></h1>
+        <button onclick="start_delivery()">Start Delivery</button>
+        <h1 id="status"></h1>
+        <script>
+            //object
+            var Order={
+                name:"Pizza",
+                price:500
+            }
+            function order_place(){
+            document.getElementById("order_place_output").innerHTML = JSON.stringify(Order)
+            }
+            //delay
+            function delay(ms){
+                return new Promise(
+                    function(resolve){
+                        setTimeout(resolve,ms)
+                    }
+                )
+            }
+            async function start_delivery(){
+            document.getElementById("status").innerHTML="Order Placed";
+            //it will run after 1 second
+            setTimeout(
+            function(){
+                document.getElementById("status").innerHTML="Kitchen is preparing your order"
+            },2000
+            )
+                await delay(6000)
+                    document.getElementById("status").innerHTML = "Out for Delivery"
+                await delay(8000)
+                document.getElementById("status").innerHTML = "Order Delivered"
+                
+            }
+        </script>
+    </body>
+</html>
